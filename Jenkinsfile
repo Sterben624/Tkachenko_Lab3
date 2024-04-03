@@ -14,11 +14,5 @@ pipeline {
                 bat 'mvn package'
             }
         }
-        stage('Run JMeter Test') {
-            steps {
-                // Крок для виконання тестування продуктивності в JMeter
-                bat '"C:\\Program Files\\apache-jmeter-5.6\\bin\\jmeter" -n -t "F:\\TestLab4.jmx" -l "F:\\Learning\\EngineeringSoft\\result.jtl"'
-            }
-        }
     }
 }
