@@ -11,7 +11,7 @@ pipeline {
         stage('Build and Deploy') {
             steps {
                 // Крок для перевиклику цілей Maven верхнього рівня для перевищення tomcat7:redeploy
-                bat 'mvn tomcat:redeploy'
+                bat 'mvn package'
             }
         }
         stage('Run JMeter Test') {
