@@ -20,4 +20,5 @@ pipeline {
                 bat '"C:\\Program Files\\apache-jmeter-5.6\\bin\\jmeter" -n -t "F:\\TestLab4.jmx" -l "F:\\Learning\\EngineeringSoft\\result.jtl"'
             }
         }
+    }
 }
